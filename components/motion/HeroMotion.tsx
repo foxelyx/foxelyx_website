@@ -31,7 +31,8 @@ export function HeroMotion() {
     }
 
     const shifts = [...card.querySelectorAll<HTMLElement>("[data-orb-shift]")];
-    const button = card.querySelector(".hero-action");
+    const buttonNode = card.querySelector(".hero-action");
+    const button = buttonNode instanceof HTMLElement ? buttonNode : null;
 
     const onMove = (event: PointerEvent) => {
       if (event.pointerType !== "mouse") return;
