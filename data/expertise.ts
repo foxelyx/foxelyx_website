@@ -1,0 +1,42 @@
+export const EXPERTISE = [
+  {
+    slug: "web-application-development",
+    title: "Web & Mobile Apps",
+    text: "Custom web apps, iOS & Android apps, dashboards and internal tools built to fit how your team works.",
+    tags: ["Web apps", "iOS & Android", "Dashboards", "Internal tools"],
+    image: "/images/expertise/web-mobile-app-development.jpg",
+    alt: "iPhone home screen showing mobile apps for FOXELYX web and mobile app development",
+  },
+  {
+    slug: "zoho-implementation",
+    title: "Zoho Implementation",
+    text: "Zoho One, CRM, Books, People and Desk configured, automated and handed over with training.",
+    tags: ["Zoho One", "CRM", "Books", "Creator"],
+    image: "/images/expertise/zoho-crm-implementation-dashboard.jpg",
+    alt: "Business analytics dashboard used in FOXELYX Zoho CRM implementation",
+  },
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    text: "Meta and Google ads, social content and Google Business Profile run for measurable leads.",
+    tags: ["Meta Ads", "Google Ads", "Social", "GBP"],
+    image: "/images/expertise/digital-marketing-campaign-planning.jpg",
+    alt: "Marketing team planning a digital campaign with laptops and sticky notes",
+  },
+  {
+    slug: "seo",
+    title: "SEO",
+    text: "Technical, on-page and local SEO that compounds traffic month after month.",
+    tags: ["Technical SEO", "On-page", "Local SEO", "Content"],
+    image: "/images/expertise/seo-traffic-analytics-dashboard.jpg",
+    alt: "Laptop showing website traffic and SEO analytics on a desk",
+  },
+  {
+    slug: "branding",
+    title: "Branding & UI/UX",
+    text: "Identity, campaign creatives, user flows and design systems that make every touchpoint consistent.",
+    tags: ["Identity", "Creatives", "UX flows", "Design systems"],
+    image: "/images/expertise/branding-ui-ux-design-system.jpg",
+    alt: "Brand color swatches beside a tablet showing a UI design system",
+  },
+] as const;

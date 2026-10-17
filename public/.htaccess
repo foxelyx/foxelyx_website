@@ -1,0 +1,28 @@
+# Static export for Apache. Do not rewrite unknown URLs to index.html.
+Options -MultiViews
+DirectoryIndex index.html
+DirectorySlash Off
+
+RewriteEngine On
+
+# Canonical host, only when the request is already for foxelyx.com
+RewriteCond %{HTTP_HOST} ^foxelyx\.com$ [NC]
+RewriteRule ^ https://www.foxelyx.com%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?foxelyx\.com$ [NC]
+RewriteRule ^ https://www.foxelyx.com%{REQUEST_URI} [R=301,L]
+
+# Old site URLs
+RewriteRule ^clients/?$ /work [R=301,L]
+RewriteRule ^clients/([^/]+)/?$ /work/$1 [R=301,L]
+RewriteRule ^search/?$ /work [R=301,L]
+RewriteRule ^brand/([^/]+)/?$ /work [R=301,L]
+RewriteRule ^pricing/?$ /products [R=301,L]
+
+# Prefer about.html over a same-named directory (needed for /in and /in/contact).
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+ErrorDocument 404 /404.html

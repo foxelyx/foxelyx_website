@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Brand identity system</title>
+  <desc id="desc">Premium identity board with brand mark, color tokens, typography, and UI components.</desc>
+  <defs>
+    <radialGradient id="bg" cx="74%" cy="24%" r="82%">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset=".42" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#09090b"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#cd435a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <circle cx="140" cy="470" r="240" fill="#6a5acd" opacity=".16"/>
+  <g filter="url(#shadow)">
+    <rect x="108" y="84" width="356" height="432" rx="40" fill="url(#panel)"/>
+    <rect x="526" y="84" width="566" height="432" rx="40" fill="url(#panel)"/>
+  </g>
+  <circle cx="286" cy="238" r="104" fill="url(#brand)"/>
+  <path d="M247 281l43-112 45 112h-28l-8-24h-37l-8 24z" fill="#fff"/>
+  <rect x="178" y="392" width="210" height="22" rx="11" fill="#111827"/>
+  <rect x="178" y="438" width="146" height="18" rx="9" fill="#cbd5e1"/>
+  <g transform="translate(590 142)">
+    <rect width="88" height="88" rx="22" fill="#f97316"/>
+    <rect x="112" width="88" height="88" rx="22" fill="#111827"/>
+    <rect x="224" width="88" height="88" rx="22" fill="#f1f5f9"/>
+    <rect x="336" width="88" height="88" rx="22" fill="#cd435a"/>
+    <rect y="140" width="382" height="38" rx="19" fill="#111827"/>
+    <rect y="204" width="292" height="24" rx="12" fill="#cbd5e1"/>
+    <rect y="270" width="164" height="60" rx="20" fill="url(#brand)"/>
+    <rect x="196" y="270" width="164" height="60" rx="20" fill="#111827"/>
+  </g>
+  <g opacity=".68">
+    <rect x="986" y="416" width="54" height="54" rx="18" fill="#f97316"/>
+    <rect x="918" y="416" width="54" height="54" rx="18" fill="#111827"/>
+    <path d="M944 210c52 42 74 94 66 154" fill="none" stroke="#f97316" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

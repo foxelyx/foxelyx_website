@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/clients", "destination": "/work", "statusCode": 301 },
+    { "source": "/clients/:id", "destination": "/work/:id", "statusCode": 301 },
+    { "source": "/search", "destination": "/work", "statusCode": 301 },
+    { "source": "/brand/:id", "destination": "/work", "statusCode": 301 },
+    { "source": "/pricing", "destination": "/products", "statusCode": 301 }
+  ]
+}
